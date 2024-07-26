@@ -1,3 +1,4 @@
+
 function slide(){
     let currentSlide = 0;
     const slides = document.querySelectorAll('.slide');
