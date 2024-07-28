@@ -11874,7 +11874,10 @@ textarea.form-control-lg {
   }
 }
 .main {
-  background-color: #1f1e21;
+  background-color: #1c191d;
+  background-image: url(../../images/final.gif);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .ri-menu-3-fill {
@@ -12299,6 +12302,7 @@ textarea.form-control-lg {
   background-color: transparent;
   border: 2px solid #fff;
   position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .btn a {
   color: #fff;
@@ -12315,28 +12319,56 @@ textarea.form-control-lg {
   position: absolute;
   left: -35;
   padding-top: 8px;
+  transition: right 0.9s ease;
 }
 
 .btn:hover {
   background-color: #a1c34a;
+  color: transparent;
+  border: none;
 }
 
-.btn-2 {
-  padding: 7px 25px 8px 12px;
-  color: #000000;
-  background-color: transparent;
-  border: 1px solid #000000;
-  position: relative;
+.btn:hover .logo-btn {
+  right: calc(50% - 20px);
+  transition: right 1.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
-.btn-2 a {
-  color: #000000;
+
+.btn2 {
+  padding: 7px 25px 7px 7px;
+  color: #000;
+  background-color: transparent;
+  border: 1px solid #000;
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+.btn2 a {
+  color: #000;
   text-decoration: none;
   padding-right: 5px;
 }
-.btn-2 span {
+.btn2 span {
   position: absolute;
   padding-left: 2px;
   font-size: large;
+}
+
+.logo-btn2 {
+  position: absolute;
+  left: -35;
+  padding-top: 6px;
+  transition: right 0.9s ease;
+}
+
+.btn2:hover {
+  background-color: #a1c34a;
+  color: transparent;
+  border: none;
+}
+
+.btn2:hover .logo-btn2 {
+  right: calc(50% - 20px);
+  transition: right 1.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .page-7 {
@@ -12473,6 +12505,15 @@ textarea.form-control-lg {
     font-size: 16px;
   }
 }
+.animgif {
+  display: flex;
+  align-items: flex-start;
+}
+.animgif img {
+  transform: translateY(180px);
+  align-self: flex-start;
+}
+
 .page-9 {
   padding-top: 5rem;
   background-color: #f5f5f5;
@@ -12722,51 +12763,6 @@ footer {
     color: #7a7a7a;
     font-weight: 600;
   }
-}
-.btn {
-  padding: 7px 25px 7px 7px;
-  color: #fff;
-  background-color: transparent;
-  border: 2px solid #fff;
-  position: relative;
-}
-.btn a {
-  color: #fff;
-  text-decoration: none;
-  padding-right: 5px;
-}
-.btn span {
-  position: absolute;
-  padding-left: 2px;
-  font-size: large;
-}
-
-.logo-btn {
-  position: absolute;
-  left: -35;
-  padding-top: 8px;
-}
-
-.btn:hover {
-  background-color: #a1c34a;
-}
-
-.btn-2 {
-  padding: 7px 25px 8px 12px;
-  color: #000000;
-  background-color: transparent;
-  border: 1px solid #000000;
-  position: relative;
-}
-.btn-2 a {
-  color: #000000;
-  text-decoration: none;
-  padding-right: 5px;
-}
-.btn-2 span {
-  position: absolute;
-  padding-left: 2px;
-  font-size: large;
 }
 
 /*# sourceMappingURL=style.css.map */
