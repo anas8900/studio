@@ -48,6 +48,8 @@ function month(){
         let year = document.querySelector('.toggle-container .year');
         let monthAmount = document.querySelectorAll('.card-plan .cards .price .month');
         let yearAmount = document.querySelectorAll('.card-plan .cards .price .year');
+        let monthAmount1 = document.querySelectorAll('.card-plan .cards-1 .price .month');
+        let yearAmount1 = document.querySelectorAll('.card-plan .cards-1 .price .year');
     
         year.onclick = () => {
             year.classList.add('active');
@@ -55,6 +57,8 @@ function month(){
     
             monthAmount.forEach(mo => { mo.style.display = 'none'; });
             yearAmount.forEach(yr => { yr.style.display = 'block'; });
+            monthAmount1.forEach(mo => { mo.style.display = 'none'; });
+            yearAmount1.forEach(yr => { yr.style.display = 'block'; });
         };
     
         month.onclick = () => {
@@ -63,8 +67,12 @@ function month(){
     
             monthAmount.forEach(mo => { mo.style.display = 'block'; });
             yearAmount.forEach(yr => { yr.style.display = 'none'; });
+            
+            monthAmount1.forEach(mo => { mo.style.display = 'block'; });
+            yearAmount1.forEach(yr => { yr.style.display = 'none'; });
         };
     });
     
 }
 month()
+
