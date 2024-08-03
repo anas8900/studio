@@ -11885,11 +11885,26 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.main {
+.animation {
   background-color: #1c191d;
-  background-image: url(../../images/ffaa.gif);
+  position: relative;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.animation:before {
+  content: "";
+  background-image: url(../../images/finall.gif);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 600px 1000px; /* Set the width and height as desired */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 700px;
+  height: 1500px;
+  transform: translate(-50%, -50%) rotate(50deg);
+  z-index: -1;
 }
 
 .ri-menu-3-fill {
@@ -12136,7 +12151,7 @@ textarea.form-control-lg {
 }
 
 .steps {
-  border: 2px solid #1f1f1f;
+  border: 1px solid #1f1f1f;
   margin-right: 15px;
   padding: 10px 15px;
 }
